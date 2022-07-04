@@ -11,6 +11,8 @@ parent.document.location.hash = "%F0%9F%8F%A9%F0%9F%8C%99%F0%9F%9B%8F%F0%9F%92%9
 </script>
 ```
 
+### 以下を https://toolbox.winofsql.jp/html-page.php で実行すると URL アニメーション
+
 ```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/EaselJS/1.0.2/easeljs.min.js"></script>
