@@ -29,7 +29,7 @@ parent.document.location.hash = "%F0%9F%8F%A9%F0%9F%8C%99%F0%9F%9B%8F%F0%9F%92%9
 	// ***************************************
 	// 繰り返しの登録
 	// ***************************************
-	createjs.Ticker.framerate = 10;
+	createjs.Ticker.framerate = 1;
 	createjs.Ticker.on("tick", loop_action );
 
 	// ***************************************
