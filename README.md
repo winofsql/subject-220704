@@ -17,6 +17,8 @@ parent.document.location.hash = "%F0%9F%8F%A9%F0%9F%8C%99%F0%9F%9B%8F%F0%9F%92%9
 
 <script>
 
+	var flg = 0;
+
 	$(function(){
 		$("#end").on("click", function(){
 			createjs.Ticker.reset();
@@ -29,13 +31,23 @@ parent.document.location.hash = "%F0%9F%8F%A9%F0%9F%8C%99%F0%9F%9B%8F%F0%9F%92%9
 	// ***************************************
 	// 繰り返しの登録
 	// ***************************************
-	createjs.Ticker.framerate = 1;
+	createjs.Ticker.framerate = 3;
 	createjs.Ticker.on("tick", loop_action );
 
 	// ***************************************
 	// ここがずっと呼ばれる
 	// ***************************************
 	function loop_action() {
+		flg++;
+		if ( flg % 3 == 0 ) {
+			parent.document.location.hash = "%F0%9F%8F%A9%F0%9F%8C%99%F0%9F%9B%8F%F0%9F%92%91%F0%9F%92%A4%F0%9F%92%A4%F0%9F%92%A4";
+		}
+		if ( flg % 2 == 1 ) {
+			parent.document.location.hash = "%F0%9F%8F%A9%F0%9F%8C%99%F0%9F%9B%8F%F0%9F%92%91"
+		}
+		if ( flg % 3 == 2 ) {
+			parent.document.location.hash = "%F0%9F%9B%8F%F0%9F%92%91"
+		}
 
 		console.log("OK");
 
